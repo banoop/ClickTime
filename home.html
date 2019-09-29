@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="styles/home.css">
+<title>The Pirate Shop</title>
+<script src="home.js"></script>
+</head>
+<body>
+<h1>Pirate Shop</h1>
+<div class ="addItems">
+    <form>
+        # of Items: <input id="itemNumber" type ="number" name = "Number of Items" placehodler="Item Number"></input>
+    </form>
+   
+    <select id="itemType">
+            <option value= "1" >Star Wars Episode IV DVD ($20)</option>
+            <option value="2">Star Wars Episode V DVD ($20)</option>
+            <option value="3" >Star Wars Episode VI DVD ($20)</option>
+            <option value="4">Star Wars Episode IV Blu-Ray ($25)</option>
+            <option value="5">Star Wars Episode V Blu-Ray ($25)</option>
+            <option value="6">Star Wars Episode VI Blu-Ray ($25)</option>
+    </select>
+    <button onClick="addItem()" class="addCart" id ="addCart">Add to Cart</button>
+</div>
+<hr>
+<div class ="cart">
+    <h1>Cart</h1>
+    <div class = "allItems">
+        <div class="item" id = "4DVD">
+                <button onClick = "deleteItem(this)">Delete</button>
+                <h5>Star Wars Episode IV DVD:</h5>
+                <input onChange = "updateCart()" type="number" class = "amount"  value = 0></input>
+        
+            </div>
+            <div class="item" id = "5DVD">
+                <button onClick = "deleteItem(this)">Delete</button>
+                <h5>Star Wars Episode V DVD:</h5>
+                <input onChange = "updateCart()" type="number" class = "amount"value = 0></input>
+            </div>
+            <div class="item" id = "6DVD">
+                <button onClick = "deleteItem(this)">Delete</button>
+                <h5 >Star Wars Episode VI DVD:</h5>
+                <input onChange = "updateCart()" type="number" class = "amount" value = 0></input>
+        
+            </div>
+            <div class="item" id = "4RAY">
+                <button onClick = "deleteItem(this)">Delete</button>
+                <h5>Star Wars Episode IV Blu-Ray:</h5>
+                <input onChange = "updateCart()" type="number" class = "amount"id = "VAL-4RAY" value = 0></input>
+        
+            </div>
+            <div class="item" id = "5RAY">
+                <button onClick = "deleteItem(this)">Delete</button>
+                <h5>Star Wars Episode V Blu-Ray:</h5>
+                <input onChange = "updateCart()" type="number"  class = "amount" value = 0></input>
+            </div>
+            <div class="item" id = "6RAY">
+                <button onClick = "deleteItem(this)">Delete</button>
+                <h5>Star Wars Episode VI Blu-Ray:</h5>
+                <input onChange = "updateCart()" type="number"  class = "amount" value = 0></input>
+            </div>
+    </div>
+    <div class = "price">
+        <h3>Total Price: </h3>
+        <h3 id = "priceVal">$0</h3>
+    </div>
+    <h4 id = 'DVDDisc'>DVD Discount Applied!</h4>
+    <h4 id = 'RayDisc'> Blu Ray Discount Applied!</h4>
+    <h4 id = 'BulkDisc'>Bulk Discount Applied!</h4>
+
+
+    
+
+</div>
+
+</body>
+</html>
