@@ -1,0 +1,49 @@
+body{
+    font-family:sans-serif;
+}
+h1{
+    text-align:center;
+    padding-bottom:50px;
+}
+.addItems{
+    padding-left:100px;
+    padding-bottom:100px;
+}
+.addItems * {
+    display:inline-block;
+}
+input{
+    width:50px;
+}
+form{
+    padding-right: 20px;
+}
+.addCart {
+    margin-left:20px;
+}
+
+h5{
+    display:inline-block;
+}
+.item{
+    margin-bottom:20px;
+    padding-left:50px;
+    display:none;
+}
+span:hover{
+    cursor:pointer;
+}
+.price *{
+    display:inline-block;
+    padding-left:50px;
+}
+.EditAmt{
+    display:inline-block;
+    margin-left:100px;
+}
+.allItems{
+    display:inline-block;
+}
+h4{
+    display:none;
+}
